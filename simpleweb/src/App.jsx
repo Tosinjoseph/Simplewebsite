@@ -16,6 +16,7 @@ function App() {
   const[showSidebar, setShowSidebar] = useState(false)
   return (
   <Router>
+
     <Routes>
 
      <Route path='/' element={<>
@@ -24,13 +25,15 @@ function App() {
       <Features/>
       <Why/>
       <Contact/>
-      <Socials/>
+     
       </>}/>
 
       <Route path='/generic' element={<>
       <Generic showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
+      
       </>}/>
     </Routes>
+     <Socials/>
   </Router>
    
   )
