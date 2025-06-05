@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = ({setShowSidebar}) => {
   return (
-    <div className=' px-4 md:px-25 lg:px-30'>
+    <div className='z-100 px-4 md:px-25 lg:px-30'>
     <div className=' flex justify-between mx-auto items-center py-4 '>
         <div>
             <img src="./logo.png" alt="" />

@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
 const Sidebar = ({showSidebar,setShowSidebar}) => {
@@ -10,7 +10,7 @@ const Sidebar = ({showSidebar,setShowSidebar}) => {
         <div className='w-[50%] relative md:w-[40%] lg:w-[25%] text-center text-xl text-gray-500 py-26  bg-white'>
             <FaTimes onClick={()=>setShowSidebar(false)} className='absolute top-6 right-8 object-contain w-8 cursor-pointer' src="./cross-desktop.png" alt="" />
             <Link to='/'><p className='pb-6 hover:text-black cursor-pointer'>Home</p></Link>
-            <p className='border-y hover:text-black py-6 cursor-pointer border-gray-400'>Generic</p>
+            <Link to='/generic'><p className='border-y hover:text-black py-6 cursor-pointer border-gray-400'>Generic</p></Link>
             <p className='py-6 hover:text-black cursor-pointer'>Elements</p>
         </div>
 

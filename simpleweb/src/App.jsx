@@ -8,6 +8,8 @@ import Why from './Components/Why'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './Components/Contact'
 import Socials from './Components/Socials'
+import Navbar from './Components/Navbar'
+import Generic from './Pages/Generic'
 
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
       <Socials/>
       </>}/>
 
+      <Route path='/generic' element={<>
+      <Generic showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
+      </>}/>
     </Routes>
   </Router>
    
