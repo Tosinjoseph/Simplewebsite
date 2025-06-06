@@ -8,8 +8,8 @@ const Navbar = ({setShowSidebar}) => {
             <img src="./logo.png" alt="" />
         </div>
         <div className='flex gap-3'>
-            <h3 className='text-xl font-bold' onClick={()=>setShowSidebar(true)}>MENU</h3>
-            <img className='filter invert w-5 object-contain'  onClick={()=>setShowSidebar(true)} src="./toggle-icon.png" alt="" />
+            <h3 className='text-xl font-bold cursor-pointer' onClick={()=>setShowSidebar(true)}>MENU</h3>
+            <img className='filter invert w-5 object-contain cursor-pointer'  onClick={()=>setShowSidebar(true)} src="./toggle-icon.png" alt="" />
         </div>
     </div>
     <div className='h-1 border-b-2 border-gray-400'></div>
